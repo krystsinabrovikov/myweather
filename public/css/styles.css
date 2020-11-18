@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+html{
+  background:#778beb;
+  /* background:#25CCF7; */
+  height: 100vh;
+}
+/* .container{
+display: flex;
+flex-direction: column;
+} */
+
+ .container{
+/* background: #ffff; */
+max-width: 25rem;
+margin:2.5rem auto;
+}
+
+body {
+  background:url('');
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  
+}
+
+ /* header{
+  background:#ffff;
+  height:3rem;
+  width:100%;
+  position:relative;
+  } */
+
+  /* header .icon img {
+    width:50px;
+    height:50px;
+    background:#ffff;
+    padding:10px;
+    position:absolute;
+    left:50%;
+    top:20px;
+    border-radius: 50%;
+    transform:translate(-50%);
+}  */
+
+.date{
+  margin:2.5rem 0 1rem 0;
+  text-align: center;
+  font-size: 1rem;
+  
+  color:#ffff;
+}
+
+
+form{
+  padding:0 0 0 4rem;
+}
+
+.city-input{
+  width:80%;
+  height:2.5rem;
+  margin-left: .5rem;
+  outline:none;
+  border:none;
+  width: 50%;
+  border-radius: 5px;
+  /* border-bottom: 1px solid #ffff; */
+  padding-left: .4rem;
+  /* filter: grayscale(100%) brightness(110%); */
+}
+
+/* .city-input[type ='text']{
+/* font-family:'Montserrat', sans-serif; */
+/* font-size: 1.1rem; */
+/* color: #ffff; */
+/* } */
+
+
+
+
+
+.btn{
+  display: inline-block;
+  background:#546de5;
+  border:none;
+  border-radius: 7px;
+  text-align: center;
+  color:#ffff;
+  padding:8px 20px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-left: 1rem;
+}
+
+  .current-output{
+    text-align: center;
+  }
+
+  .current-temp{
+    color: #ffff;
+    margin-top:2.2rem;
+    font-size: 2.2rem;
+  }
+.current-icon{
+  padding: 1rem 1rem 0 1rem;
+
+  width:150px;
+  height: 150px;
+}
+.current-des{
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #ffff;
+  
+}
+  
+  .current-wind{
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #ffff;
+  
+  }
+  .current-humid{
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #ffff;
+  
+  }
+  
+  
+
+  .container-forecast{
+    /* background:#25CCF7; */
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    padding:0 1rem;
+    margin-bottom: 2rem;
+  }
+
+.card{
+  background: #546de5;
+ 
+  padding:1rem;
+  text-align: center;
+  margin:1rem;
+  border-radius: 7px;
+  border: 1px solid #ffff;
+}
+
+.forecast-date{
+  
+  font-size: 1.4rem;
+  font-weight: 700;
+  border-radius: 7px;
+  color:#ffff;
+  padding: 1rem .5rem; 
+  /* margin-top:0; */
+  /* margin-bottom: 1.5rem; */
+}
+
+
+.forecast-image img{
+  width:130px;
+  height: 130px;
+  margin-top: 1rem;
+}
+.forecast-temp{
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: #ffff;
+}
+.forecast-des{
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #ffff;
+}
+

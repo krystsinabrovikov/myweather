@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+  <div class="container">
+<!-- <header>
+  <div class ="icon"><img src="/icon/compass.svg" alt=""></div>
+</header> -->
+
+<div class="date">
+<h2><%= day %></h2>
+</div>
+
+<form action="/" method="post">
+<input class="city-input" type="text" name="city" placeholder="Enter a city" >
+<button class="btn"type="submit">Go</button>
+</form>
+
+
+
+<div class="current-output">
+  <% if(temp !== null) {%>
+  <h1 class="current-temp">It's <%= temp %> in <%= city %></h1>
+   <% } %>
+
+
+  <% if(icon !== null) {%>
+    <img class="current-icon" src="http://openweathermap.org/img/w/<%= icon %>.png" alt="">
+<%}%>
+
+<div class="description">
+  <% if(des !== null) {%>
+    <h3 class="current-des"><%= des %></h3>
+  <%}%>
+  
+  <% if(humidity !== null) {%>
+    <h3 class="current-humid">humidity: <%= humidity %>%</h3>
+  <% } %>
+  <% if(wind !== null) {%>
+    <h3 class="current-wind">wind: <%= wind %></h3>
+  <% } %>
+</div>
+  </div>
+</div>
+
+<% if(temp !== null) {%>
+  <div class="container-forecast">
+    <div class="card">
+        <h2 class="forecast-date"><%= forecastDate1 %></h2>
+        <div class="forecast-image"><img src="http://openweathermap.org/img/w/<%= icon1 %>.png"alt="">
+      </div>
+      <h2 class="forecast-temp"><%= temp1 %></h2>
+      <h3 class="forecast-des"><%= des1 %></h3>
+      </div>
+    
+      <div class="card">
+        <h2 class="forecast-date"><%= forecastDate2 %></h2>
+        <div class="forecast-image"><img src="http://openweathermap.org/img/w/<%= icon2 %>.png"alt="">
+        </div>
+      <h2 class="forecast-temp"><%= temp2 %></h2>
+      <h3 class="forecast-des"><%= des2 %></h3>
+      </div>
+    
+      <div class="card">
+        <h2 class="forecast-date"><%= forecastDate3 %></h2>
+        <div class="forecast-image"><img src="http://openweathermap.org/img/w/<%= icon3 %>.png"alt="">
+        </div>
+      <h2 class="forecast-temp"><%= temp3 %></h2>
+      <h3 class="forecast-des"><%= des3 %></h3>
+      </div>
+    
+    
+    <div class="card">
+      <h2 class="forecast-date"><%= forecastDate4 %></h2>
+      <div class="forecast-image"><img src="http://openweathermap.org/img/w/<%= icon4 %>.png"alt="">
+      </div>
+    <h2 class="forecast-temp"><%= temp4 %></h2>
+    <h3 class="forecast-des"><%= des4 %></h3>
+    </div>
+    
+    <div class="card">
+      <h2 class="forecast-date"><%= forecastDate5 %></h2>
+      <div class="forecast-image"><img src="http://openweathermap.org/img/w/<%= icon5 %>.png"alt="">
+      </div>
+    <h2 class="forecast-temp"><%= temp5 %></h2>
+    <h3 class="forecast-des"><%= des5 %></h3>
+    </div>
+    </div>
+<% } %>
+
+  
+</body>
+</html>
+
